@@ -1,7 +1,6 @@
 <?php
 
 
-
 $user='Fa80';
 $password_definit='motDePasse';
 

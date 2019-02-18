@@ -11,12 +11,7 @@ require_once('includes/header.php');
     <div>
         <a href="views/connection.php">Connexion</a>
     </div>
-     <div>
-        <a href="views/update.php">Update</a>
-    </div>
-     <div>
-        <a href="views/delete.php">Delete</a>
-    </div>
+   
 
         <div class="container-fluid" id="main">
             

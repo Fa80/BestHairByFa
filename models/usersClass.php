@@ -39,6 +39,13 @@ class users extends Database{
             return true;
         }   
     }
+    
+    
+    
+    /**
+     * 
+     * @return type
+     */
     public function connectUser(){
          $query = 'SELECT * FROM `users` WHERE `email` = :email';
         $result = $this->db->prepare($query);
@@ -49,7 +56,11 @@ class users extends Database{
         }
       
     }
-  
+    
+  /**
+   * 
+   * @return boolean
+   */
     public function updateUsers(){
         $query = 'UPDATE `users` SET `lastname` = :lastname, `firstname` = :firstname, `birthdate` = :birthdate, `phone` = :phone, `email` = :email WHERE `id` = :id';
         $result = $this->db->prepare($query);
@@ -59,32 +70,35 @@ class users extends Database{
         $result->bindValue(':birthdate', $this->birthdate, PDO::PARAM_STR);
         $result->bindValue(':phone', $this->phone, PDO::PARAM_STR);
         $result->bindValue(':email', $this->email, PDO::PARAM_STR);
-
-        if ($result->execute()){
-            // Si $result est un objet, on éxécute la requête et on récupère le résultat dans la variable $objectResult
-            return true;
+            if ($result->execute()){
+                 return true;
         }
     }
-    public function removeUser() {
-        $query = 'DELETE FROM `users` '
-                . 'WHERE `id` = :id';
+    /**
+     * 
+     * @return type
+     */
+    
+    public function deleteUser(){
+        $query = 'DELETE FROM `users` WHERE `id` = :id';
         $result = $this->db->prepare($query);
         $result->bindValue(':id', $this->id, PDO::PARAM_INT);
-        return $result->execute();
+        if($result->execute()){
+        return true ;
+    }
     }
     
+    /**
+     * 
+     * @return type
+     */
     public function ShowUserProfil(){
          $query = 'SELECT * FROM `users` WHERE `id` = :id';
         $result = $this->db->prepare($query);
         $result->bindValue(':id', $this->id, PDO::PARAM_STR);
           if ($result->execute()){
             $selectResult = $result->fetchAll(PDO::FETCH_OBJ);
-            $this->lastname = $selectResult[0]->lastname;
-            $this->firstname = $selectResult[0]->firstname;
-            $this->birthdate = $selectResult[0]->birthdate;
-            $this->phone = $selectResult[0]->phone;
-            $this->email= $selectResult[0]->email;
-                   return $selectResult;
+                return $selectResult;
         }
       
     }
