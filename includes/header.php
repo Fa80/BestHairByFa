@@ -15,19 +15,28 @@ session_start();
     </head>  
     
     <!--      Début nav 1           -->
+    
+    
     <header id="up">
+<!--        <nav class="navbar navbar-light bg-dark justify-content-between">
+            <a class="navbar-brand">Accueil</a>
+            <form class="form-inline">
+                <button class="btn btn-outline-white my-2 my-sm-0" type="submit" name="panier"><link href="assets/img/panierbouton.png"</button>
+            </form>
+        </nav>-->
         <div class="row bg-dark">
             <!-- Just an image -->
             <img src="assets/img/logo-hair.png" class="img-responsive" id="logoImg" alt="logo">
-                
+            
             <form class="form-inline m-auto">
                 <input class="form-control mr-sm-2" type="search" size="20" placeholder="Que cherchez-vous?...">
                 <button class="btn btn-outline-white my-2 my-sm-0" type="submit">Rechercher</button>
             </form>
+            <button><img src="../assets/img/panier.png"></button></
             <!--        Panier            -->
-<!-- <button type="button" class="btn" data-toggle="modal" data-target="#modal" id="panierVide"><img src="assets/img/panier.png"></button>-->
+ 
         </div> 
-                     <!-- Debut sidenav --> 
+        <!-- Debut sidenav --> 
         <div class="row bg-dark">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -48,25 +57,34 @@ session_start();
                 }
                 ?>
             </div>
-                
-       
-            <span id="menu-burger" style="color: white;" onclick="openNav()">&#9776; </span>
-
-            <div>
+            
+            
+            <span id="menu-burger" style="color: white;" onclick="openNav()">&#9776; MENU </span>
+            
+            
                 <?php
                 if(isset($_SESSION['id'])){
                     ?>
-                <a href="views/profile.php">Profil</a>
+            <div class="profil">
+            <a style="color: white;" href="views/profile.php">Mon Profil</a>
                 <?php
                 }else{
                     ?>
-                <a href="views/registration.php">Inscription</a>
-             <a href="views/connection.php">Connexion</a>
+            </div>
+            <ul class="nav nav-tabs burger">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" style="color: white;" aria-expanded="false">Mon Compte</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../views/registration.php">inscription</a>
+                        <a class="dropdown-item" href="../views/connection.php">Connexion</a>
+                </li>
+            </ul>
+            
              <?php
                 }
                 ?>
-            </div>   
-
+            
+            
     </header> 
-
+    
     <!--Fin sidenav-->

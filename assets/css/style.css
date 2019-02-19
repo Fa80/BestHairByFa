@@ -1,5 +1,5 @@
 body{
-  background-image: url(../assets/img/imagedefond.png);
+  background-image: url(img/imagedefond.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
 background-size: cover;
@@ -9,8 +9,6 @@ background-size: cover;
     width: 45%;
    
 }
-
-
 
 #menu-burger{
   margin-left: 5%;  
@@ -31,17 +29,18 @@ menu li a{
    background-color: #DCD1CD;  
  }
 
-#panierVide{
-  position: absolute;
-  float:right;
-  top: 38%;
-  left: 85%;
-}
-
-#panierVide{
-     width:10px; 
+   .burger{
+       margin-left: 90%;
    }
    
+   .profil{
+       margin-left: 80%;
+   }
+   
+   .burger:hover{
+       background-color: #light-grey;
+           color: white;
+   }
   
 /*DEBUT SIDE NAV*/
  /* The side navigation menu */

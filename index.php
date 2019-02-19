@@ -5,14 +5,7 @@ require_once('includes/header.php');
     
 <body>
  
-          <div>
-        <a href="views/registration.php">Inscription</a>
-    </div>
-    <div>
-        <a href="views/connection.php">Connexion</a>
-    </div>
-   
-
+       
         <div class="container-fluid" id="main">
             
             
@@ -24,7 +17,7 @@ require_once('includes/header.php');
             
             
 <!--             Debut caroussel   -->
-<!--            <div id="carouselExampleIndicators" class="carousel promo col-md-9 offset-3 slide" data-ride="carousel">
+         <div id="carouselExampleIndicators" class="carousel promo col-md-9 offset-3 slide" data-ride="carousel">
                 <div class="carorusel-inner">
                     <div class="carousel-item active">
                         <a class="carousel-lien" href="#titre-ombrehair">
@@ -59,7 +52,7 @@ require_once('includes/header.php');
 
     
                 
-              Fin caroussel   
+<!--              Fin caroussel   -->
     
     
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -192,7 +185,8 @@ require_once('includes/header.php');
      require_once('includes/footer.php');     
        ?>  
 
-
+    </div>
+        </div>
 </body>
 </html>
 
