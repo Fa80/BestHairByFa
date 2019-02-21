@@ -1,8 +1,8 @@
 <?php
 // inclusion de la base de donnée
-include_once '../models/database.php';
+require'../models/database.php';
 // inclusion du header
-include_once '../includes/header.php';
+include'../includes/header.php';
 ?>
 <!-- formulaire changement mot de passe début -->
 <div class="container">

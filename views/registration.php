@@ -1,10 +1,9 @@
          <?php 
-// inclue une fois le fichier header.php qui se trouve dans le dossier includes.  
-require_once('../includes/header.php');  
-//require_once('../includes/header.php');
-require_once('../controllers/registrationCtrl.php');
-?> 
+// inclue le fichier header.php qui se trouve dans le dossier includes.  
 
+require'../controllers/registrationCtrl.php';
+?> 
+    
 <div class="container">
     <div class="row">
         <div class="col-sm-8 m-auto">
@@ -24,40 +23,28 @@ require_once('../controllers/registrationCtrl.php');
                             
                     }
                ?>
-                            
+                   
                 <div class="card-body bg-light m-auto py-2">
                     <form action="registration.php" method="post" class="form">
                         <label for="lastname">Nom</label>
-                        <input class="form-control" type="text" id="lastname" name="lastname" placeholder="Votre nom" placeholder="Votre nom" >
-                       
+                        <input class="form-control" type="text" id="lastname" name="lastname" value="<?= (isset($_POST['lastname'])) ? $_POST['lastname'] : '' ?>"  >
                         <label for="firstname">Prénom</label>
-                        <input class="form-control" type="text" name="firstname" id="firstname" placeholder="Votre Prenom">
-                       
+                        <input class="form-control" type="text" name="firstname" id="firstname" value="<?= (isset($_POST['firstname'])) ? $_POST['firstname'] : '' ?>">
                         <label for="birthdate">Date de naissance</label>
-                       <input class="form-control" type="date" name="birthdate" id="birthdate">
-                       
+                        <input class="form-control" type="date" name="birthdate" id="birthdate" value="<?= (isset($_POST['birthdate'])) ? $_POST['birthdate'] : '' ?>">
                         <label for="phone">Téléphone</label>
-                        <input class="form-control" type="text" name="phone" id="phone" placeholder="Votre numero de téléphone">
-                        
+                        <input class="form-control" type="text" name="phone" id="phone" value="<?= (isset($_POST['phone'])) ? $_POST['phone'] : '' ?>">
                         <label for="emailAddUser">Mail</label>
-                        <input class="form-control" type="email" name="email" id="email" placeholder="Votre mail" id="mail">
-                       
+                        <input class="form-control" type="email" name="email" id="email" value="<?= (isset($_POST['email'])) ? $_POST['email'] : '' ?>">
                         <label for="Mot de passe">Mot de passe</label>
-                        <input class="form-control" type="password" name="password" id="password" placeholder="Votre mot de passe" id="password">
-                        
+                        <input class="form-control" type="password" name="password" id="password" value="<?= (isset($_POST['password'])) ? $_POST['password'] : '' ?>">
                         <div class="mb-5 mt-5">
                             <button class="btn btn-secondary col-5 mr-3" type="submit" name="submit"  id="submit">Valider</button>
                             <a href="javascript:history.go(-1)" class="btn btn-secondary col-5 ml-3">Retour</a>
                         </div>
                     </form>
                 </div>
-           
-                
-                
-                
-                
-     
-                
+
      <?php     
-   require_once('../includes/footer.php');     
+   include'../includes/footer.php';     
       ?>

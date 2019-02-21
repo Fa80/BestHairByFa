@@ -1,7 +1,7 @@
 <?php
 // inclue une fois le fichier database.php qui est dans le dossier models.
 require_once '../models/database.php';
-require_once '../models/usersClass.php';
+require_once '../models/users.php';
 
 
  if(isset($_POST['submit'])){
@@ -13,7 +13,11 @@ require_once '../models/usersClass.php';
             if(password_verify($password, $selectResult[0]->password)){
                 $_SESSION['id'] = $selectResult[0]->id;
                 $_SESSION['email'] = $selectResult[0]->email;
-                header('Location: ../index.php');
+//                $_SESSION['lastname'] = $selectResult[0]->lastname;
+//                $_SESSION['firstname'] = $selectResult[0]->firstname;
+//                $_SESSION['birthdate'] = $selectResult[0]->birthdate;
+//                $_SESSION['phone'] = $selectResult[0]->phone;
+                 header('Location: ../index.php');
                 exit();
             }else{
                 echo 'Mot de passe incorrect';
@@ -21,16 +25,6 @@ require_once '../models/usersClass.php';
             }
           
 
-        
-     
-
-
-
-
-
-  
-    
-    
     
             
             

@@ -62,6 +62,7 @@ class users extends Database{
    * @return boolean
    */
     public function updateUsers(){
+          // requête permettant de mettre à jour les valeurs de l'enregistrement
         $query = 'UPDATE `users` SET `lastname` = :lastname, `firstname` = :firstname, `birthdate` = :birthdate, `phone` = :phone, `email` = :email WHERE `id` = :id';
         $result = $this->db->prepare($query);
         $result->bindValue(':id', $this->id, PDO::PARAM_INT);
@@ -80,6 +81,7 @@ class users extends Database{
      */
     
     public function deleteUser(){
+          // requête permettant de supprimer
         $query = 'DELETE FROM `users` WHERE `id` = :id';
         $result = $this->db->prepare($query);
         $result->bindValue(':id', $this->id, PDO::PARAM_INT);
@@ -93,6 +95,7 @@ class users extends Database{
      * @return type
      */
     public function ShowUserProfil(){
+          // requête permettant d'afficher les valeurs de l'enregistrement
          $query = 'SELECT * FROM `users` WHERE `id` = :id';
         $result = $this->db->prepare($query);
         $result->bindValue(':id', $this->id, PDO::PARAM_STR);

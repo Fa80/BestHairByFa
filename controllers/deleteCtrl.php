@@ -3,15 +3,9 @@
 // inclue une fois le fichier database.php qui est dans le dossier models.
 // inclue une fois le fichier UserClass.php qui est dans le dossier models.
 require_once  ('../models/database.php');
-require_once ('../models/usersClass.php');
+require_once ('../models/users.php');
 
-
-//// regex pour les textes
-//$regexText = '/^[A-Za-zàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ° \'\-]+$/';
-//// regex pour le téléphone
-//$regexPhone = '/^(\d){10}/';
-    
-        
+     
         
         // Suppression des données de l'utilisateur
 if (isset($_GET['delete'])) {

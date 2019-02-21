@@ -1,8 +1,8 @@
 <?php
     
-require_once('../includes/header.php');
+include'../includes/header.php';
     
-require_once '../controllers/profileCtrl.php';
+require '../controllers/profileCtrl.php';
     
 if(isset($_GET['id'])){
     

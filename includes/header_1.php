@@ -14,11 +14,32 @@
         <link href="assets/css/style.css" rel="stylesheet">
     </head>  
     
+    <!--      Début nav 1           -->
     
-    <!-- Debut navbar --> 
+    <!--    <header id="up">
+            <nav class="navbar navbar-light bg-dark justify-content-between">
+                <a class="navbar-brand">Accueil</a>
+                <form class="form-inline">
+                    <button class="btn btn-outline-white my-2 my-sm-0" type="submit" name="panier"><link href="assets/img/panierbouton.png"</button>
+                </form>
+            </nav>
+            <div class="row bg-dark">
+                 Just an image 
+                <img src="assets/img/logo-hair.png" class="img-responsive" id="logoImg" alt="logo">
+                
+                <form class="form-inline m-auto">
+                    <input class="form-control mr-sm-2" type="search" size="20" placeholder="Que cherchez-vous?...">
+                    <button class="btn btn-outline-white my-2 my-sm-0" type="submit">Rechercher</button>
+                </form>
+                        Panier            
+                <button><img src="../assets/img/panier1.png"></button>
+                        Panier            
+     
+            </div> -->
+    <!-- Debut sidenav --> 
     
     <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3">
-        <a class="navbar-brand img-responsive" id="m1" href="produit.php"><img src="assets/img/logo-hair.png" alt="" height="100px" width="120px"/></a>
+        <a class="navbar-brand img-responsive" id="m1" href="index.php"><img src="../assets/img/logo-hair.png" alt="" height="100px" width="120px"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,43 +50,27 @@
         <div class="collapse navbar-collapse justify-content-end m2" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link mr-5 text-white" href="../views/produit.">Tous les produits</a>
+                    <a class="nav-link mr-5 text-white" href="../ressources">Ressources</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-5 text-white" href="../views/contact">Nous Contacter</a>
+                    <a class="nav-link mr-5 text-white" href="../aide-partage">Aide/Partage</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" style="color: white;" aria-expanded="false">Mon Compte</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="../views/registration.php">inscription</a>
                         <a class="dropdown-item" href="../views/connection.php">Connexion</a>
-<!--                        <a class="dropdown-item" href="../views/profile.php?action=deco">Se Deconnecter</a>-->
+                        <a class="dropdown-item" href="../views/profile.php?action=deco">Se Deconnecter</a>
                 </li>
                 <li>
-                    <a class="img-responsive ml-5 mr-5" href="../views/panier"><img src="../assets/img/panier1.png" height="40px" width="40px"></a>
+                    <a class="img-responsive ml-5 mr-5" href="#panier"><img src="../assets/img/panier1.png" height="40px" width="40px"></a>
                 </li>
             </ul>
         </div>
     </nav>
     
     
-    
-                <?php
-                if(isset($_SESSION['id'])){
-                    ?>
-    <div class="profil">
-        <a style="color: white;" href="views/profile.php">Mon Profil</a>
-                <?php
-                }else{
-                    ?>
-    </div>
-    <div>
 
-             <?php
-                }
-                ?>
-        
-        
     </header> 
     
     <!--Fin sidenav-->

@@ -1,7 +1,7 @@
          <?php 
 // inclue une fois le fichier header.php qui se trouve dans le dossier includes.     
-include('../includes/header.php');
-require_once('../controllers/connectionCtrl.php');
+include'../includes/header.php';
+require'../controllers/connectionCtrl.php';
 ?> 
     
 <div class="container">

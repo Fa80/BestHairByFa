@@ -1,8 +1,7 @@
          <?php 
-// inclue une fois le fichier header.php qui se trouve dans le dossier includes.  
-require_once('../includes/header.php');  
-//require_once('../includes/header.php');
-require_once('../controllers/deleteCtrl.php');
+// inclue le fichier header.php qui se trouve dans le dossier includes.  
+include'../includes/header.php';  
+require'../controllers/deleteCtrl.php';
 ?> 
 
 <div class="container">

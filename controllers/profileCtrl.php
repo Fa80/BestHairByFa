@@ -1,7 +1,7 @@
 <?php
 
 include_once '../models/database.php';
-require_once ('../models/usersClass.php');
+require_once ('../models/users.php');
 
 if(isset($_SESSION['id'])){
 $user = new users();
