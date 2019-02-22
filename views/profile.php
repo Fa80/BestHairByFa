@@ -1,7 +1,7 @@
 <?php
     
 include'../includes/header.php';
-    
+ 
 require '../controllers/profileCtrl.php';
     
 if(isset($_GET['id'])){

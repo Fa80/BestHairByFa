@@ -8,8 +8,32 @@ include'includes/header.php';
     
     <div class="container-fluid" id="main">
         
-        <h1 class="text-center mb-3">L'UNIVERS CAPILLAIRE DE BEAUTE</h1>
+        <h2 class="text-center mb-3">L'UNIVERS CAPILLAIRE DE BEAUTE</h2>
         
+        
+        <div class="row">   
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="assets/img/thumbnailbh.jpeg"  alt="bodywave">
+     </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="assets/img/thumbnailbh3.jpeg"  alt="kinkycurly">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="assets/img/thumbnailbh5.jpeg" alt="straight">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>        
         
         <!--             Debut caroussel   -->
         <div id="carouselExampleIndicators" class="carousel promo col-md-9 offset-3 slide" data-ride="carousel">

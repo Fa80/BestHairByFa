@@ -1,7 +1,6 @@
 <?php
          
-// inclue une fois le fichier header.php qui se trouve dans le dossier includes.     
-include'../includes/header_1.php';
+
 
 // inclue une fois le fichier database.php qui est dans le dossier models.
 // inclue une fois le fichier UserClass.php qui est dans le dossier models.
@@ -48,16 +47,6 @@ require'../models/users.php';
 //                    
 //         }        
 
-                        
-                 
-
-
-
-
-
-
-
-                        
                         
                         // Regex permettant la sécurisation du code.
 $regexText = '/^[A-Za-zàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ° \'\-]+$/';
@@ -136,6 +125,7 @@ $user = new users();
                 if ($user->addUser()){
                 // Alors on se dirrige vers la page connection.php
                 header('Location: connection.php');
+                    exit();
                 }       
              }else{
                // Si non affiche le message 'Veuillez vérifier votre saisie' 

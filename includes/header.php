@@ -1,3 +1,4 @@
+
 <?php
 // Demarrage de la session
     session_start();
@@ -29,10 +30,10 @@
         <div class="collapse navbar-collapse justify-content-end m2" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link mr-5 text-white" href="../views/produit.">Tous les produits</a>
+                    <a class="nav-link mr-5 text-white" href="../views/produit.">Produits</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-5 text-white" href="../views/contact">Nous Contacter</a>
+                    <a class="nav-link mr-5 text-white" href="../views/contact">Contact</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" style="color: white;" aria-expanded="false">Mon Compte</a>
@@ -68,4 +69,4 @@
         
     </header> 
     
-    <!--Fin sidenav-->
+<!--Fin sidenav-->

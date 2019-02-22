@@ -1,6 +1,6 @@
          <?php 
 // inclue le fichier header.php qui se trouve dans le dossier includes.  
-
+include'../includes/header.php';  
 require'../controllers/registrationCtrl.php';
 ?> 
     
