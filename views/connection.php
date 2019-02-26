@@ -1,6 +1,6 @@
          <?php 
 // inclue une fois le fichier header.php qui se trouve dans le dossier includes.     
-include'../includes/header.php';
+include'../views/headerV.php';
 require'../controllers/connectionCtrl.php';
 ?> 
     
@@ -23,11 +23,10 @@ require'../controllers/connectionCtrl.php';
                         } ?>  
                 <div class="card-body bg-light m-auto py-2">
                     <form action="connection.php" method="post" class="form">
-                        
                         <label for="Adresse email">Adresse email :</label>
-                        <p><input class="form-control" type="email" name="email" placeholder="Votre email" id="email"></p>
+                        <input class="form-control" type="email" name="email" id="email" value="<?= (isset($_POST['email'])) ? $_POST['email'] : '' ?>">
                         <label for="Mot de passe">Mot de passe :</label>
-                        <p><input class="form-control" type="password" name="password" placeholder="Votre mot de passe" id="password"></p>
+                       <input class="form-control" type="password" name="password" id="password">
                         <div class="mb-5 mt-5">
                             <div class="mb-5 mt-5">
                                 <button class="btn btn-secondary col-5 mr-3" type="submit" name="submit"  id="submit">Valider</button>
@@ -40,10 +39,8 @@ require'../controllers/connectionCtrl.php';
           </div>      
         </div>
     </div>
-   </div>
-        
-
-   
+   </div>             
      <?php     
-   require_once('../includes/footer.php');     
-       ?>  
+ include'../views/footerV.php';     
+     ?>  
+ </div>

@@ -1,6 +1,6 @@
          <?php 
 // inclue le fichier header.php qui se trouve dans le dossier includes.  
-include'../includes/header.php';  
+include'../views/headerV.php';  
 require'../controllers/registrationCtrl.php';
 ?> 
     
@@ -13,8 +13,7 @@ require'../controllers/registrationCtrl.php';
                     <?php
                     if(isset($errors) && count($errors) != 0){
                         foreach ($errors as $error){
-                            
-                    ?>
+                   ?>
                 <div class="alert alert-danger">
                     <p><?= $error ;?></p>
                 </div>
@@ -23,7 +22,6 @@ require'../controllers/registrationCtrl.php';
                             
                     }
                ?>
-                   
                 <div class="card-body bg-light m-auto py-2">
                     <form action="registration.php" method="post" class="form">
                         <label for="lastname">Nom</label>
@@ -46,5 +44,5 @@ require'../controllers/registrationCtrl.php';
                 </div>
 
      <?php     
-   include'../includes/footer.php';     
+   include'../views/footerV.php';     
       ?>

@@ -10,8 +10,7 @@ class users extends Database{
     public $birthdate;
     public $phone;
     public $email;
-    public $password;
-    
+    public $password;   
      /**
      * Methode magique __construct
      */
@@ -34,14 +33,13 @@ class users extends Database{
         $addUser->bindValue(':phone', $this->phone, PDO::PARAM_INT);
         $addUser->bindValue(':email', $this->email, PDO::PARAM_STR);
         $addUser->bindValue(':password', $this->password, PDO::PARAM_STR);
-        // On utilise la methode execute(), et on lui demande un retourn true.
-        if ($addUser->execute()){
-            return true;
-        }   
-    }
-    
-    
-    
+        // On execute la requete une fois prête.
+            if ($addUser->execute()){
+                return true;
+            }
+      }   
+
+      
     /**
      * 
      * @return type
@@ -51,7 +49,7 @@ class users extends Database{
         $result = $this->db->prepare($query);
         $result->bindValue(':email', $this->email, PDO::PARAM_STR);
           if ($result->execute()){
-            $selectResult = $result->fetchAll(PDO::FETCH_OBJ);
+            $selectResult = $result->fetch(PDO::FETCH_OBJ);
                    return $selectResult;
         }
       
@@ -81,7 +79,7 @@ class users extends Database{
      */
     
     public function deleteUser(){
-          // requête permettant de supprimer
+          // requête permettant de supprimer un utilisateur.
         $query = 'DELETE FROM `users` WHERE `id` = :id';
         $result = $this->db->prepare($query);
         $result->bindValue(':id', $this->id, PDO::PARAM_INT);

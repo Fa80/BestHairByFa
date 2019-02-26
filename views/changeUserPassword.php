@@ -1,6 +1,6 @@
 <?php
 // inclusion du header
-include'../includes/header.php';
+include'../views/headerV.php';
 // inclusion de la base de donnée
 require'../models/database.php';
     
@@ -48,4 +48,4 @@ require'../models/database.php';
 </div>
 <!-- formulaire changement mot de passe fin -->
 <!-- inclusion du footer -->
-<?php include_once '../includes/footer.php'; ?>
+<?php include '../views/footerV.php'; ?>

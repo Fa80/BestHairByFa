@@ -11,8 +11,8 @@ session_start();
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Abel" rel="stylesheet"> 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
-        <link href="assets/css/style.css" rel="stylesheet">
-        <a href="assets/img/404.png" />
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <a href="../assets/img/404.png" />
         <title> Page inexistante | Best Hair By Fa</title>
     </head>
     <body>

@@ -1,32 +1,44 @@
 <?php
 // inclue une fois le fichier database.php qui est dans le dossier models.
-require_once '../models/database.php';
-require_once '../models/users.php';
+require'../models/database.php';
+require'../models/users.php';
 
-
+$mail = '';
+$message = '';
+$regexMail = '/^[A-z0-9._%+-]+[\@]{1}[A-z0-9.-]+[\.]{1}[A-z]{2,4}$/';
+$formError = array();
+// Vérification de l'adresse mail.
  if(isset($_POST['submit'])){
-    $connect = new users();
-    $email = $_POST['email'];
-    $connect->email = $email;
-      $selectResult = $connect->connectUser();
-            $password = $_POST['password'];
-            if(password_verify($password, $selectResult[0]->password)){
-                $_SESSION['id'] = $selectResult[0]->id;
-                $_SESSION['email'] = $selectResult[0]->email;
-//                $_SESSION['lastname'] = $selectResult[0]->lastname;
-//                $_SESSION['firstname'] = $selectResult[0]->firstname;
-//                $_SESSION['birthdate'] = $selectResult[0]->birthdate;
-//                $_SESSION['phone'] = $selectResult[0]->phone;
-                 header('Location: ../index.php');
-                exit();
+     if (!empty($_POST['email'])){
+       if (preg_match($regexMail, $_POST['email'])){
+        $email = htmlspecialchars($_POST['email']);
+     }else{ 
+         $formError['email'] = 'La saisie de votre mail est invalide';
+       }
+     } else {
+        $formError['email'] = 'Veuillez indiquer votre mail';
+    }
+     // Vérification du mot de passe.
+      if (!empty($_POST['password'])){
+          $password = $_POST['password'];
+          } else {
+        $formError['password'] = 'Veuillez entrer votre mot de passe';
+    }
+     // Si tout le formulaire est correct , nous envoyons les données vers la base de données et nous nous connectons au compte utilisateur.     
+      if (count($formError) == 0){    
+    $user = new users();
+       $user->email = $email;
+         $selectUser = $user->connectUser();
+         //var_dump($selectUser);
+               if(password_verify($password, $selectUser->password)){
+                $_SESSION['id'] = $selectUser->id;
+                $_SESSION['email'] = $selectUser->email;
+                 header('Location: ../views/profile.php');
+              exit();
             }else{
-                echo 'Mot de passe incorrect';
+                echo 'La connexion a échoué';
                 }
-            }
-          
-
-    
-            
-            
-    // inclue une fois le fichier footer.php qui se trouve dans le dossier includes.     
-require_once('../includes/footer.php');
+            }else{
+                echo 'Bienvenue sur le site de Best Hair!';
+    }
+       }

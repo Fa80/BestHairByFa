@@ -1,6 +1,6 @@
          <?php 
 // inclue le fichier header.php qui se trouve dans le dossier includes.  
-include'../includes/header.php';  
+include'../views/headerV.php';  
 require'../controllers/deleteCtrl.php';
 ?> 
 
@@ -31,5 +31,5 @@ require'../controllers/deleteCtrl.php';
      
                 
      <?php     
-   require_once('../includes/footer.php');     
+   include'../views/footerV.php';     
       ?>

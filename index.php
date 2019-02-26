@@ -2,92 +2,50 @@
    // inclue une fois le fichier header.php qui se trouve dans le dossier includes.     
 include'includes/header.php';
 ?> 
-
 <body>
-    
-    
+                                <!--  Début container-->
     <div class="container-fluid" id="main">
-        
         <h2 class="text-center mb-3">L'UNIVERS CAPILLAIRE DE BEAUTE</h2>
-        
-        
-        <div class="row">   
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="assets/img/thumbnailbh.jpeg"  alt="bodywave">
-     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="assets/img/thumbnailbh3.jpeg"  alt="kinkycurly">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="assets/img/thumbnailbh5.jpeg" alt="straight">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>        
-        
         <!--             Debut caroussel   -->
-        <div id="carouselExampleIndicators" class="carousel promo col-md-9 offset-3 slide" data-ride="carousel">
-            <div class="carorusel-inner">
-                <div class="carousel-item active">
-                    <a class="carousel-lien" href="#titre-ombrehair">
-                        <img class="carousel-img" src="assets/img/imagedefond.jpg" alt="image de fond">
-                        <div class="carousel-caption">
-                            <h3 class="caption">Promo du moment sur les ombre hair</h3><hr class="hr-carousel">
-                            <p class="caption">Cliquez ici pour voir !!</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            
-            <a class="carousel-lien" href="#titre-yakihair">
-                <img class="carousel-img" src="assets/img/accueil.jpg" alt="yakihair">
+      <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel promo col-md-9 slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a class="carousel-lien" href="#straight">
+                <img class="d-block w-80 carousel-img-promo" src="assets/img/accueil.jpg" alt="straighthair">
                 <div class="carousel-caption">
-                    <h3 class="">Nos plus belle yaki hair</h3><hr class="hr-carousel">
-                    <p class="">C'est par ici !</p>
-            </a>
+                 </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a class="carousel-lien" href="#ombre-slider.jpg">
+                <img class="d-block w-100 carousel-img-promo" src="assets/img/ombre-slider.jpg" alt="ombrehair">
+                <div class="carousel-caption">
+             </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a class="carousel-lien" href="#thumbnailbh1.jpeg">
+                <img class="d-block w-70 carousel-img-promo" src="assets/img/thumbnailbh1.jpeg" alt="thumbnail">
+                <div class="carousel-caption">
+               </a>
+              </div>
+            </div>
+          </a>
         </div>
-        
-        <div class="carousel-item">
-            
-            <a class="carousel-lien" href="#titre-staighthair">
-                <img class="carousel-img" src="assets/img/27430.jpg" alt="straight">
-                <h3 class="caption">Nos straight hair</h3><hr class="hr-carousel">
-                <p class="caption">Vaut mieux avoir des cheveux lisses pour changer de style souvent</p>
-            </a>
-        </div>
-    </div>
-    
-    
-    
-    <!--              Fin caroussel   -->
-    
-    
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 <!--     Fin carousel  -->
-
-<!--  2ème partie accuieil-->
-
+<!--  2ème partie accueil-->
 <!-- Carousel début -->
-<div class="container">
+<div class="row mt-4">
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-wrap="true">
         <div class="carousel-inner row w-100 mx-auto">
             <div class="row">
@@ -149,7 +107,7 @@ include'includes/header.php';
                     <div class="card text-center">
                         <img class="card-img-top img-fluid" src="assets/img/bodyombre.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-title">Body Wave Ombre</h4>
+                            <h4 class="card-title">Body Wave</h4>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                         </div>
@@ -179,9 +137,9 @@ include'includes/header.php';
 </div>
 </div>
 <!-- Carousel fin --> 
-
+<!-- Fin container --> 
      <?php     
-     require_once('includes/footer.php');     
+     require'includes/footer.php';     
        ?>  
 </body>
 </html>

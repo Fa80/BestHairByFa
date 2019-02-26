@@ -2,8 +2,8 @@
          
 // inclue une fois le fichier database.php qui est dans le dossier models.
 // inclue une fois le fichier UserClass.php qui est dans le dossier models.
-require_once  ('../models/database.php');
-require_once ('../models/users.php');
+require'../models/database.php';
+require'../models/users.php';
 
      
         
