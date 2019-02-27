@@ -1,4 +1,5 @@
          <?php 
+session_start();
 // inclue une fois le fichier header.php qui se trouve dans le dossier includes.     
 include'../views/headerV.php';
 require'../controllers/connectionCtrl.php';
@@ -43,4 +44,4 @@ require'../controllers/connectionCtrl.php';
      <?php     
  include'../views/footerV.php';     
      ?>  
- </div>
+ 

@@ -4,9 +4,6 @@
 // inclue une fois le fichier UserClass.php qui est dans le dossier models.
 require'../models/database.php';
 require'../models/users.php';
-
-     
-        
         // Suppression des données de l'utilisateur
 if (isset($_GET['delete'])) {
     $deleteUser = new users();

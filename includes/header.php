@@ -1,4 +1,3 @@
-
 <?php
 // Demarrage de la session
     session_start();
@@ -38,12 +37,12 @@
  <?php
                         if(isset($_SESSION['id'])){
                             ?>
-                          <a class="dropdown-item" href="../views/registration.php">inscription</a>
+                          <a class="dropdown-item" href="../views/registration.php">Inscription</a>
                         <a class="dropdown-item" href="../views/connection.php">Connexion</a>
                     <?php
                         }else{
                             ?>
-                        <a class="dropdown-item" href="../views/registration.php">inscription</a>
+                        <a class="dropdown-item" href="../views/registration.php">Inscription</a>
                         <a class="dropdown-item" href="../views/connection.php">Connexion</a>
                 <?php
                         }

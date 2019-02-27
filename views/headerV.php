@@ -1,8 +1,4 @@
 
-<?php
-// Demarrage de la session
-    session_start();
-?>
 <!Doctype html>
 <html lang="fr">
     <head>
@@ -14,11 +10,8 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
         <link href="../assets/css/style.css" rel="stylesheet">
     </head>  
-    
-    
     <!-- Debut navbar --> 
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3">
         <a class="navbar-brand img-responsive" id="m1" href="produit.php"><img src="../assets/img/logo-hair.png" alt="" height="100px" width="120px"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,10 +31,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" style="color: white;" aria-expanded="false">Mon Compte</a>
                     <div class="dropdown-menu">
-                        
-<!--                           <a class="dropdown-item"  href="../views/registration.php">Inscription</a>
+<!--                     <a class="dropdown-item"  href="../views/registration.php">Inscription</a>
                            <a class="dropdown-item" href="../views/connection.php">Connexion</a>-->
-                 
                     <?php
                         if(isset($_SESSION)){
                             ?>
@@ -57,7 +48,5 @@
             </ul>
         </div>
     </nav>
-
     </header> 
-    
 <!--Fin sidenav-->

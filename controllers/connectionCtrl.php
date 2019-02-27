@@ -6,21 +6,21 @@ require'../models/users.php';
 $mail = '';
 $message = '';
 $regexMail = '/^[A-z0-9._%+-]+[\@]{1}[A-z0-9.-]+[\.]{1}[A-z]{2,4}$/';
-$formError = array();
+$formError = array();      
 // Vérification de l'adresse mail.
- if(isset($_POST['submit'])){
+ if(isset($_POST['submit'])){      
      if (!empty($_POST['email'])){
        if (preg_match($regexMail, $_POST['email'])){
         $email = htmlspecialchars($_POST['email']);
-     }else{ 
+     }else{       
          $formError['email'] = 'La saisie de votre mail est invalide';
-       }
+       }      
      } else {
-        $formError['email'] = 'Veuillez indiquer votre mail';
-    }
+        $formError['email'] = 'Veuillez indiquer votre mail';            
+    }      
      // Vérification du mot de passe.
       if (!empty($_POST['password'])){
-          $password = $_POST['password'];
+          $password = $_POST['password'];      
           } else {
         $formError['password'] = 'Veuillez entrer votre mot de passe';
     }

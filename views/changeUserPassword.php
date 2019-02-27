@@ -1,4 +1,5 @@
 <?php
+session_start();
 // inclusion du header
 include'../views/headerV.php';
 // inclusion de la base de donnée

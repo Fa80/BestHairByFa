@@ -1,9 +1,9 @@
          <?php 
+         session_start();
 // inclue le fichier header.php qui se trouve dans le dossier includes.  
 include'../views/headerV.php';  
 require'../controllers/registrationCtrl.php';
-?> 
-    
+?>  
 <div class="container">
     <div class="row">
         <div class="col-sm-8 m-auto">
@@ -19,7 +19,6 @@ require'../controllers/registrationCtrl.php';
                 </div>
                         <?php
                         }
-                            
                     }
                ?>
                 <div class="card-body bg-light m-auto py-2">
@@ -42,7 +41,10 @@ require'../controllers/registrationCtrl.php';
                         </div>
                     </form>
                 </div>
-
+                </div>
+            </div>
+        </div>
+    </div>
      <?php     
    include'../views/footerV.php';     
-      ?>
+      

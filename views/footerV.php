@@ -1,5 +1,5 @@
 <div class="footer">
-    <div class="row mt-">
+    <div class="row mt-4">
         <div class="row mt-2 text-center">
             <div class="col-sm-3">
                 <p class="small" style="color:white"><img class="logofooter" src="../assets/img/picto_transport.png" alt="Picto Transport">Livraison Gratuite dès 80€</p>
@@ -16,7 +16,7 @@
         </div>
     </div>
     <div class="row">
-        <h5 class="small" style="text-align:center;">Copyright&copy;Best Hair By Fa 2019</h5>    
+        <h5 class="small">Copyright&copy;Best Hair By Fa 2019</h5>    
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

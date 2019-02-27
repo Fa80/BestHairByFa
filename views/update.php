@@ -1,4 +1,5 @@
          <?php 
+         session_start();
 // inclue le fichier header.php qui se trouve dans le dossier includes.  
 include'../views/headerV.php';  
 require'../controllers/updateCtrl.php';
@@ -20,26 +21,24 @@ require'../controllers/updateCtrl.php';
                         }
                     }
                ?>
-                   
                 <div class="card-body bg-light m-auto py-2">
                     <form action="update.php" method="post" class="form">
                         <label for="lastname">Nom</label>
-                        <input class="form-control" type="text" id="lastname" name="lastname" value="<?= $updateUser->lastname; ?>" >
+                        <input class="form-control" type="text" id="lastname" name="lastname" value="<?= $infoUser->lastname; ?>" >
                         <label for="firstname">Prénom</label>
-                        <input class="form-control" type="text" name="firstname" id="firstname" value="<?= $updateUser->firstname; ?>">
+                        <input class="form-control" type="text" name="firstname" id="firstname" value="<?= $infoUser->firstname; ?>">
                         <label for="birthdate">Date de naissance</label>
-                        <input class="form-control" type="date" name="birthdate" id="birthdate" value="<?= $updateUser->birthdate; ?>">
+                        <input class="form-control" type="date" name="birthdate" id="birthdate" value="<?= $infoUser->birthdate; ?>">
                         <label for="phone">Téléphone</label>
-                        <input class="form-control" type="text" name="phone" id="phone" value="<?= $updateUser->phone; ?>">
+                        <input class="form-control" type="text" name="phone" id="phone" value="<?= $infoUser->phone; ?>">
                         <label for="emailAddUser">Mail</label>
-                        <input class="form-control" type="email" name="email" id="email" value="<?= $updateUser->email; ?>">
+                        <input class="form-control" type="email" name="email" id="email" value="<?= $infoUser->email; ?>">
                         <div class="mb-5 mt-5">
                             <button class="btn btn-secondary col-5 mr-3" type="submit" name="submit"  id="submit">Modifier</button>
                             <a href="javascript:history.go(-1)" class="btn btn-secondary col-5 ml-3">Retour</a>
                         </div>
                     </form>
                 </div>
-                    
      <?php     
    include'../views/footerV.php';     
       ?>

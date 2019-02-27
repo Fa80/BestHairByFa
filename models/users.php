@@ -1,5 +1,4 @@
          <?php 
-
 /** extends permet l'heritage entre 2 classes.
  * Donc  users hérite de Database ce qui permet d'utiliser son constructeur et donc d'établir la connection à la base de données
  */
@@ -7,13 +6,12 @@ class users extends Database{
     public $id;
     public $lastname;
     public $firstname;
+      
     public $birthdate;
     public $phone;
     public $email;
-    public $password;   
-     /**
-     * Methode magique __construct
-     */
+    public $password;    
+     //Methode magique __construct
     public function __construct() {
         parent::__construct();
     }
@@ -39,7 +37,6 @@ class users extends Database{
             }
       }   
 
-      
     /**
      * 
      * @return type
@@ -52,9 +49,7 @@ class users extends Database{
             $selectResult = $result->fetch(PDO::FETCH_OBJ);
                    return $selectResult;
         }
-      
-    }
-    
+     }
   /**
    * 
    * @return boolean
@@ -74,10 +69,9 @@ class users extends Database{
         }
     }
     /**
-     * 
+     * }}
      * @return type
      */
-    
     public function deleteUser(){
           // requête permettant de supprimer un utilisateur.
         $query = 'DELETE FROM `users` WHERE `id` = :id';
@@ -87,7 +81,6 @@ class users extends Database{
         return true ;
     }
     }
-    
     /**
      * 
      * @return type
@@ -98,10 +91,9 @@ class users extends Database{
         $result = $this->db->prepare($query);
         $result->bindValue(':id', $this->id, PDO::PARAM_STR);
           if ($result->execute()){
-            $selectResult = $result->fetchAll(PDO::FETCH_OBJ);
+            $selectResult = $result->fetch(PDO::FETCH_OBJ);
                 return $selectResult;
         }
-      
     }
   }
   

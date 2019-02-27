@@ -1,11 +1,8 @@
 <?php
-
 // inclue une fois le fichier database.php qui est dans le dossier models.
 // inclue une fois le fichier UserClass.php qui est dans le dossier models.
 require'../models/database.php';
-require'../models/users.php';
-
-                        
+require'../models/users.php';      
                         // Regex permettant la sécurisation du code.
 $regexText = '/^[A-Za-zàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ° \'\-]+$/i';
 $regexPhone = '/^(\d){10}/';
@@ -13,10 +10,9 @@ $regexDate = '/^[0-9]{4}-[0-9]{2}-[0-9]{2}/';
 $regexLogin = '/^[a-zA-Z0-9_\- @éèàùëïôê]{6,20}/';
 $regexMail = '/^[A-z0-9._%+-]+[\@]{1}[A-z0-9.-]+[\.]{1}[A-z]{2,4}$/';
 $formError = array();
-
-// On instancie l'objet user dans la classe users.
+            // On instancie l'objet user dans la classe users.
 $user = new users();
-     // On vérifie avec la condition si $_POST comporte plus de 0 données alors on exécute le contenu du if.
+        // On vérifie avec la condition si $_POST comporte plus de 0 données alors on exécute le contenu du if.
     if (COUNT( $_POST) > 0){
            // on initialise les variable et on sécurise par htmlspecialchars             
         $lastname = htmlspecialchars($_POST['lastname']);
@@ -25,7 +21,6 @@ $user = new users();
         $phone = htmlspecialchars($_POST['phone']);
         $email = htmlspecialchars($_POST['email']);
         $password = password_hash($_POST['password'], PASSWORD_BCRYPT);  //hachage du password.
-        
      // Vérification du nom selon la regex + filtrage de l'email;
         if (!empty($_POST['lastname'])){
             if(preg_match($regexText, $lastname)){
@@ -36,7 +31,7 @@ $user = new users();
             } else {
         $formError['lastname'] = 'Veuillez indiquer votre nom';
     }
-               // Vérification du prénom selon la regex
+      // Vérification du prénom selon la regex
     if (!empty($_POST['firstname'])){
         if(preg_match($regexText, $firstname)){    
             $user->firstname = $firstname;
@@ -46,7 +41,7 @@ $user = new users();
       } else {
         $formError['firstname'] = 'Veuillez indiquer votre prénom';
     }        
-            // Vérification de la date de naissance selon la regex
+        // Vérification de la date de naissance selon la regex
     if (!empty($_POST['birthdate'])){
        if(preg_match($regexDate, $birthdate)){
             $user->birthdate = $birthdate;
@@ -66,7 +61,7 @@ $user = new users();
        } else {
         $formError['phone'] = 'Veuillez indiquer votre numéro de téléphone';
     }
-                  // email déja sécurisé avec  FILTER_VALIDATE_EMAIL
+        // email déja sécurisé avec  FILTER_VALIDATE_EMAIL
             if (!empty($_POST['email'])){ 
                 if(filter_var($email, FILTER_VALIDATE_EMAIL)){
                 $user->email = $email; 
