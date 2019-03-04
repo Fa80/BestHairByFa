@@ -6,18 +6,18 @@ class role extends Database{
     public $id;
     public $right;
     public $id_users; 
-      
+    
      //Methode magique __construct
     public function __construct() {
         parent::__construct();
     }
   /**
    * 
-   * @return type
+   * @return stdClass
    */
                public function showRole(){
                // requête permettant d'inserrer les valeurs de l'enregistrement.
-        $query = 'SELECT `users`.`lastname`, `users`.`firstname`, `users`.`birthdate`, `users`.`phone`, `users`.`email`, `users`.`password`,`role`.`right`, `role`.`id_users` FROM `role` INNER JOIN `users` ON `role`.`id_users` = `users`.`id` WHERE `users`.`id` =  :id_users';
+        $query = 'SELECT `users`.`lastname`, `users`.`firstname`, `users`.`birthdate`, `users`.`phone`, `users`.`email`, `users`.`password`,`role`.`right` FROM `users` INNER JOIN `role` ON `role`.`id_users` = `users`.`id` WHERE `users`.`id` =  :id_users';
         $showInfo = $this->db->prepare($query);
         $showInfo->bindValue(':id_users', $this->id_users);
         $showInfo->execute();

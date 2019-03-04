@@ -11,11 +11,12 @@ include'../views/headerV.php';
                 <?php
             if(isset($infoUser)){  
    ?>
-                <p><?= $infoUser->lastname; ?></p>
-                <p><?=$infoUser->firstname; ?></p>
-                <p><?= $infoUser->birthdate; ?></p>
-                <p><?= $infoUser->phone; ?></p>
-                <p><?= $infoUser->email; ?></p>
+                <p><?= $infoUser[0]->lastname; ?></p>
+                <p><?=$infoUser[0]->firstname; ?></p>
+                <p><?= $infoUser[0]->birthdate; ?></p>
+                <p><?= $infoUser[0]->phone; ?></p>
+                <p><?= $infoUser[0]->email; ?></p>
+                <p><?= $infoUser[0]->right; ?></p>
             <?php
     }else{
      echo 'Merci de vous connecter pour avoir accès à votre profil';  
