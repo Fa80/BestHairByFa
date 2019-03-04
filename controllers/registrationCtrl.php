@@ -74,7 +74,7 @@ $user = new users();
     
             // Vérification du mot de passe 
             if (!empty($_POST['password'])){
-                        $user->password= password_hash($_POST['password'], PASSWORD_DEFAULT);;
+                        $user->password= password_hash($_POST['password'], PASSWORD_BCRYPT);;
              //si les champs sont vides ou s'il ne sont pas identiques affichage d'un message d'erreur 
             } else {
         $formError['password'] = 'Veuillez vérifier votre mot de passe';

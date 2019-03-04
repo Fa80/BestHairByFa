@@ -18,7 +18,7 @@ include'../views/headerV.php';
                 <p><?= $infoUser->email; ?></p>
             <?php
     }else{
-     echo 'Vous devez être connecter pour avoir accès à votre profil';  
+     echo 'Merci de vous connecter pour avoir accès à votre profil';  
     }
    ?>  
                 <div class="row text-align:center">

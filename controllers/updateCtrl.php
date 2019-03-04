@@ -10,7 +10,6 @@ $updateUser = new users();
 $id = $_SESSION['id'];
 $updateUser->id=$id;
 $infoUser = $updateUser->ShowUserProfil();
-var_dump($id);
     if (COUNT( $_POST) > 0){
       // On vérifie avec la condition si $_POST comporte plus de 0 données alors on exécute le contenu du if.                
         $lastname = htmlspecialchars($_POST['lastname']);

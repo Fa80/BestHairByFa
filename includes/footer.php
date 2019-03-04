@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="row">
-        <h5 class="small" style="text-align:center;">Copyright&copy;Best Hair By Fa 2019</h5>    
+        <h5 class="small">Copyright&copy;Best Hair By Fa 2019</h5>    
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -47,7 +47,7 @@ class users extends Database{
         $result->bindValue(':email', $this->email, PDO::PARAM_STR);
           if ($result->execute()){
             $selectResult = $result->fetch(PDO::FETCH_OBJ);
-                   return $selectResult;
+                return $selectResult;
         }
      }
   /**
@@ -64,7 +64,7 @@ class users extends Database{
         $result->bindValue(':birthdate', $this->birthdate, PDO::PARAM_STR);
         $result->bindValue(':phone', $this->phone, PDO::PARAM_STR);
         $result->bindValue(':email', $this->email, PDO::PARAM_STR);
-            if ($result->execute()){
+            if($result->execute()){
                  return true;
         }
     }

@@ -26,10 +26,10 @@
         <div class="collapse navbar-collapse justify-content-end m2" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link mr-5 text-white" href="../views/produit.">Produits</a>
+                    <a class="nav-link mr-5 text-white" href="../views/produit.php">Produits</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-5 text-white" href="../views/contact">Contact</a>
+                    <a class="nav-link mr-5 text-white" href="../views/contact.php">Contact</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" style="color: white;" aria-expanded="false">Mon Compte</a>
