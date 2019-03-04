@@ -26,4 +26,15 @@ class role extends Database{
                 return $showInfos;
             }
       }   
+        
+            
+               public function roleUtilisateur(){
+                   $query = 'INSERT INTO `role`(`id_users`) VALUES (:id_users)';
+                    $roleUtilisateur = $this->db->prepare($query);
+                         $roleUtilisateur->bindValue(':id_users', $this->id_users, PDO::PARAM_INT);
+                            if ($roleUtilisateur->execute()){
+                                return true;
+                            }
+               }
+
 }

@@ -81,7 +81,7 @@ $user = new users();
    }
                  //Si la methode addUser  est verifiée dans la classe users alors affiche le message 'L'utilisateur a bien été ajouté...'
                 if ($user->addUser()){
-                // Alors les données ont bien été transmises à la base de données et on renvoie vers la page de connexion
+             // Alors les données ont bien été transmises à la base de données et on renvoie vers la page de connexion
                 header('Location: connection.php');
                   exit();
                 }else{       
