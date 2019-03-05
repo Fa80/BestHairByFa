@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse justify-content-end m2" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link mr-5 text-white" href="../views/produit.php">Produits</a>
+                    <a class="nav-link mr-5 text-white" href="../views/product.php">Produits</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mr-5 text-white" href="../views/contact.php">Contact</a>
@@ -49,7 +49,7 @@
                             ?>
                   </li>
                 <li>
-                    <a class="img-responsive ml-5 mr-5" href="../views/panier"><img src="../assets/img/panier1.png" height="40px" width="40px"></a>
+                    <a class="img-responsive ml-5 mr-5" href="../views/panier"><img src="../assets/img/poissonPanier.png" height="40px" width="40px"></a>
                 </li>
             </ul>
         </div>

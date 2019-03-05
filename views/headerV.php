@@ -8,11 +8,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
-        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="/assets/css/style.css" rel="stylesheet">
     </head>  
     <!-- Debut navbar --> 
         <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3">
-        <a class="navbar-brand img-responsive" id="m1" href="produit.php"><img src="../assets/img/logo-hair.png" alt="" height="100px" width="120px"/></a>
+        <a class="navbar-brand img-responsive" id="m1" href="produit.php"><img src="/../assets/img/logo-hair.png" alt="" height="100px" width="120px"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse justify-content-end m2" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link mr-5 text-white" href="../views/produit.">Produits</a>
+                    <a class="nav-link mr-5 text-white" href="/../views/product.php">Produits</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mr-5 text-white" href="../views/contact">Contact</a>
@@ -43,7 +43,7 @@
                             ?>
                 </li>
                 <li>
-                    <a class="img-responsive ml-5 mr-5" href="../views/panier"><img src="../assets/img/panier1.png" height="40px" width="40px"></a>
+                    <a class="img-responsive ml-5 mr-5" href="../views/panier"><img src="/../assets/img/poissonPanier.png" height="40px" width="40px"></a>
                 </li>
             </ul>
         </div>
