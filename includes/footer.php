@@ -22,7 +22,6 @@
     </div>
         <h5 class="small">Copyright&copy;Best Hair By Fa 2019</h5>    
     </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>

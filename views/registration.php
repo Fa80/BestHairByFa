@@ -28,7 +28,6 @@ require'../controllers/registrationCtrl.php';
                         <input class="form-control" type="text" id="lastname" name="lastname" value="<?= (isset($_POST['lastname'])) ? $_POST['lastname'] : '' ?>"  >
                         <label for="firstname">Prénom</label>
                         <input class="form-control" type="text" name="firstname" id="firstname" value="<?= (isset($_POST['firstname'])) ? $_POST['firstname'] : '' ?>">
-                        <input class="form-control" type="text" name="phone" id="phone" value="<?= (isset($_POST['phone'])) ? $_POST['phone'] : '' ?>">
                         <label for="birthdate">Date de naissance</label>
                         <input class="form-control" type="date" name="birthdate" id="birthdate" value="<?= (isset($_POST['birthdate'])) ? $_POST['birthdate'] : '' ?>">
                         <label for="phone">Téléphone</label>

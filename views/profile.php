@@ -19,7 +19,7 @@ include'../views/headerV.php';
                 <p><?= $infoUser[0]->right; ?></p>
             <?php
     }else{
-     echo 'Merci de vous connecter pour avoir accès à votre profil';  
+     echo ' ';  
     }
    ?>  
                 <div class="row text-align:center">
