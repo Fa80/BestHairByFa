@@ -4,8 +4,8 @@
 <script src="assets/js/script.js" type="text/javascript"></script>
 <footer>
     <div class="footer">
+ <div class="container">
  <div class="row mt-4">
-        <div class="row mt-2 text-center">
             <div class="col-sm-3">
                 <p class="small" style="color:white"><img class="logofooter" src="/assets/img/picto_transport.png" alt="Picto Transport">Livraison Gratuite dès 80€</p>
             </div>
@@ -19,8 +19,9 @@
                 <p class="small" style="color:white"><img class="logofooter" src="/assets/img/picto_virement.png" alt="Picto virement">Virement et chèque</p>
             </div>
         </div>
-    </div>     
+    </div>
         <h5 class="small">Copyright&copy;Best Hair By Fa 2019</h5>    
+    </div>
     </div>
 </footer>
 </body>

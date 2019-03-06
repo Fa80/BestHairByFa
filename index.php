@@ -6,7 +6,7 @@ include'includes/header.php';
  <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Best Hair By Fa</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -30,15 +30,15 @@ include'includes/header.php';
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-          <center><img src="assets/img/thumbnailbh1.jpeg" alt="Los Angeles" style="width:80%;"></center>
+          <center><img src="assets/img/thumbnailbh1.jpeg" alt="Los Angeles" class="img-carousel"></center>
       </div>
 
       <div class="item">
-          <center><img src="assets/img/thumbnail8.jpeg" alt="Chicago" style="width:80%;"></center>
+          <center><img src="assets/img/thumbnail8.jpeg" alt="Chicago" class="img-carousel"></center>
       </div>
     
       <div class="item">
-          <center><img src="assets/img/thumbnail4.jpeg" alt="New york" style="width:80%;"></center>
+          <center><img src="assets/img/thumbnail4.jpeg" alt="New york" class="img-carousel"></center>
       </div>
     </div>
 

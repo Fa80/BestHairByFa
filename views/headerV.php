@@ -31,12 +31,9 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" style="color: white;" aria-expanded="false">Mon Compte</a>
                     <div class="dropdown-menu">
-<!--                     <a class="dropdown-item"  href="../views/registration.php">Inscription</a>
-                           <a class="dropdown-item" href="../views/connection.php">Connexion</a>-->
                     <?php
                         if(isset($_SESSION)){
                             ?>
-<!--                        <a class="dropdown-item" href="../views/profile.php">Profil Client</a>-->
                         <a class="dropdown-item" href="../index.php">Déconnection</a>
                 <?php
                         }

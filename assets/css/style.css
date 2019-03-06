@@ -9,6 +9,19 @@ body{
     width: 7%;
     margin-left: 2%;
 } 
+.img-carousel{
+width:450px;
+height:500px;
+}
+
+.carousel-control.right{
+background-image:none !important;
+}
+
+.carousel-control.left{
+background-image:none !important;
+}
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main{
   transition: margin-left .5s;
